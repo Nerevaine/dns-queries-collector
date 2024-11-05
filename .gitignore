@@ -1,0 +1,28 @@
+# Entorno virtual
+env/
+venv/
+
+# Archivos de configuración de entorno
+.env
+
+# Archivos de caché de Python
+__pycache__/
+*.py[cod]
+
+# Archivos de logs
+*.log
+app.log
+
+# Archivos de Docker y Compose
+.dockerignore
+docker-compose.override.yml
+
+# Configuración de IDEs
+.idea/
+.vscode/
+*.swp
+
+# Archivos de salida y dependencias
+*.egg-info/
+build/
+dist/

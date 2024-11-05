@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  dns_collector:
+    build: .
+    container_name: dns_queries_collector
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+    command: ["python", "src/main.py", "data/queries"]
