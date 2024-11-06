@@ -38,9 +38,14 @@ The ranking algorithm in `stats.py` uses Python’s `Counter` from the `collecti
 
 2. **Create a virtual environment**:
 
+```bash
 python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
+source venv/bin/activate  
+```
+### On Windows: 
+```bash
+venv\Scripts\activate
+```
 
 3. **Install dependencies**:
 
@@ -65,7 +70,12 @@ LOG_FILE=app.log
 To execute the application locally:
 
 ```bash
-python src/main.py
+python src/main.py or python3 src/main.py
+```
+
+If you have any problem with the root use :
+```bash
+PYTHONPATH=. python3 src/main.py
 ```
 
 This command processes the default data/sample.log file, sends the data to the Lumu API, and prints statistics in the console.
